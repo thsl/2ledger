@@ -1,39 +1,31 @@
-.wrapper {
-  background-color: #fff;
-
-}
 
 .main-header {
   &.header-home {
-    min-height: 450px;
-    max-height: 450px;
-    //overflow: hidden;
-    background: url("@{image-path-theme}/backgrounds/header-bck.png") right bottom no-repeat rgba(62, 62, 88, 1);
+    padding: 0;
+    //height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: table;
+    width: 100%;
     .header-img {
-      position: relative;
-      img {
-        position: absolute;
-        top: 100px;
-        right: 30px;
-      }
-      @media (max-width: @screen-sm) {
+      position: absolute;
+      top: -250px;
+      left: -80%;
+      @media (max-width: @screen-md) {
         display: none;
       }
     }
   }
-  &.header-titles {
-    min-height: 250px;
-    max-height: 250px;
-    overflow: hidden;
-    background: rgba(62, 62, 88, 1);
-  }
+
   color: @white;
 
   @media (max-width: @screen-sm) {
     text-align: center;
   }
   .header-txt {
-    margin-top: 140px;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
   }
   .header-form {
     margin-top: 60px;
@@ -66,42 +58,70 @@
       font-weight: 700;
     }
   }
-
 }
-
-.section-explica {
-  margin: 60px 0;
-  padding: 30px 0;
-  .img-explica {
-    height: 135px;
-    position: relative;
-    margin: 16px 0 16px 0;
-    img {
-      position: absolute;
-      bottom: 0;
+.section-map{
+  background: url("@{image-path-theme}/backgrounds/bck-001.png") center left no-repeat transparent;
+  background-size: contain;
+}
+.section-detalha {
+  background: url("@{image-path-theme}/backgrounds/header-bck-blur.png") center left no-repeat @blue-darken-one;
+  background-size: 100%;
+  .box-flipped {
+    width: fit-content;
+    text-align: center;
+    .box-shadowned {
+      width: fit-content;
+      padding: 32px;
+      background: #102131;
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.49);
+      border-radius: 15px;
       margin: 0 auto;
-      left: 0;
-      right: 0;
+    }
+    &-one {
+      transform: translate(141%, -100px) rotate(315deg);
+      position: absolute;
+      width: 160px;
+    }
+    &-two {
+      transform: translate(-19%, -90px) rotate(315deg);
+      position: absolute;
+      width: 190px;
+    }
+    &-three {
+      transform: translate(60%, 100px) rotate(315deg);
+      position: absolute;
+      width: 190px;
+    }
+    &-four {
+      transform: translate(305%, 90px) rotate(315deg);
+      position: absolute;
+      width: 120px;
+    }
+    @media (max-width: @screen-md) {
+      transform: none !important;
+      width: 25%;
+      height: 120px;
+      position: relative;
+      float: left;
+      padding: 35px 15px;
+    }
+    @media (max-width: @screen-sm) {
+      width: 160px;
+      float: none;
+      height: auto;
+      margin: 0 auto;
     }
   }
 }
-
-.section-detalha {
-  margin: 60px 0 0 0;
-  padding: 60px 0;
-  color: @white;
-  background: #86c6c2; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #86c6c2 0%, #014567 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #86c6c2 0%, #014567 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #86c6c2 0%, #014567 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#86c6c2', endColorstr='#014567', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-}
-
-.section-plano {
-  padding: 80px 0;
-  color: @white;
-  background: url("@{image-path-theme}/backgrounds/plans-bck.jpg") #27314A;
-  background-size: cover;
+.section-price{
+  .box-price{
+    background-color: @blue-light-two;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    min-height: 295px;
+    margin: 16px 0;
+  }
 }
 
 .section-contato {
@@ -143,15 +163,11 @@
 }
 
 .footer-page {
-  padding: 32px 0;
-  background-color: rgba(62, 62, 88, 1);
-  text-align: center;
-  color: @white;
-  font-size: 90%;
-  a {
-    color: @white;
-    &:hover {
-      color: @white;
-    }
-  }
+  margin: 120px 0 0 0;
+  padding: 64px 0;
+  border-top: 1px solid @blue-light-two;
+}
+.assina {
+  margin: 16px 0;
+  padding: 16px 0;
 }

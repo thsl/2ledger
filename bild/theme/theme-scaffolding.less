@@ -50,7 +50,7 @@
 
 .btn {
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 50px;
   border: 0;
   //font-size: 20px;
   @media (max-width: @screen-xs) {
@@ -67,10 +67,20 @@
   }
 }
 
+.btn-primary {
+  /* Rectangle 2: */
+  .gradient-one();
+  border-radius: 100px;
+
+}
+
 .btn-outline {
   color: #fff;
   background-color: transparent;
   border: 1px solid @white;
+  border-radius: 50px;
+  padding: 6px 12px !important;
+
   &:hover, &:focus {
     background-color: transparent;
     border-color: @white;
@@ -173,25 +183,25 @@
 .divider-top {
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px solid #c8c8c8;
+  border-top: 1px solid rgba(59, 90, 120, 0.5);
 }
 
 .divider-right {
   margin-right: 10px;
   padding-right: 10px;
-  border-right: 1px solid #c8c8c8;
+  border-right: 1px solid #3B5A78;
 }
 
 .divider-bottom {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #3B5A78;
 }
 
 .divider-left {
   margin-left: 10px;
   padding-left: 10px;
-  border-left: 1px solid #c8c8c8;
+  border-left: 1px solid #3B5A78;
 }
 
 // ---------------------------------------------------------------
@@ -615,4 +625,18 @@ input[type=checkbox], input[type=radio] {
     background: url("@{image-path-theme}/icones/icon-estudeai.png") no-repeat left center;
     padding: 10px 0 10px 32px;
   }
+}
+
+
+.spacer-sm{
+  padding: 16px 0;
+}
+.spacer-md{
+  padding: 32px 0;
+}
+.spacer-lg{
+  padding: 64px 0;
+}
+.spacer-xl{
+  padding: 128px 0;
 }
