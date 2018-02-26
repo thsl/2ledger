@@ -6,7 +6,7 @@
     height: 100%;
   }
   .modal-backdrop {
-   background-color: #10101a;
+    background-color: #10101a;
   }
   .modal-backdrop.in {
     opacity: 0.95 !important;
@@ -14,17 +14,30 @@
 }
 
 .modal-dark {
+  color: @blue-darken-one;
+  text-align: center;
+  .modal-header {
+    background-color: @aqua;
+    color: @white;
+    text-transform: uppercase;
+    .close {
+      margin-top: -12px;
+    }
+  }
   .modal-content {
     border-radius: 0;
-    color: @white;
+    color: @blue-darken-one;
     box-shadow: none;
-    background-color: transparent;
+    background-color: #f2f5fa;
     border: 0;
     a {
-      color: @white;
+      color: @blue-light-two;
     }
   }
   .modal-content {
 
+  }
+  .modal-body {
+    padding: 30px;
   }
 }

@@ -10,30 +10,45 @@
   }
   .btn {
     text-transform: uppercase;
-    padding: 15px;
+
   }
   input,
   textarea {
-    color: #fff;
+    color: @blue-darken-one;
     //background: transparent;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 1);
+    background: #cddbde;
+    border: 0;
     border-radius: 0;
-    border-bottom-width: 3px;
+    //border-bottom-width: 3px;
     text-align: left;
   }
   ::-webkit-input-placeholder {
-    color: #fff;
+    color: @blue-darken-one
   }
   :-moz-placeholder {
-    color: #fff;
+    color: @blue-darken-one
   }
   ::-moz-placeholder {
-    color: #fff;
+    color: @blue-darken-one
   }
   :-ms-input-placeholder {
-    color: #fff;
+    color: @blue-darken-one
   }
+  &.login {
+    .btn {
+      width: 100%;
+      border-radius: 0;
+      width: 100%;
+      padding: 16px ;
+    }
+  }
+}
+
+.input-group-addon {
+  background: #cddbde;
+  border: 0;
+  border-radius: 0;
+  color: @blue-darken-one;
 }
 
 .blue-btn {

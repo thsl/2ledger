@@ -336,29 +336,30 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i class="ion-ios-close-outline h1 text-white"></i> </span>
                         </button>
-                        <h3 class="modal-title">Acesse sua página</h3>
+                        <h5 class="modal-title"><strong>Member Login</strong></h5>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Para acessar inform seus dados</p>
+                                <p>System access</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <form id="login" class="custom-form" action="" method="">
+                                <form id="login" class="custom-form login" action="" method="">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="sr-only" for="">E-mail</label>
-                                                <input type="email" class="form-control" name="email" id="email" value="" placeholder="E-mail">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="ion-person"></i></span>
+                                                <input type="text" class="form-control" placeholder="Username">
                                             </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="">Senha</label>
-                                                <input type="password" class="form-control" name="pass" id="pass" value="" placeholder="Senha">
+                                            <div class="input-group mt-md">
+                                                <span class="input-group-addon"><i class="ion-locked"></i></span>
+                                                <input type="password" class="form-control" placeholder="Username">
                                             </div>
-                                            <div class="form-group">
-                                                <button name="submit" type="submit" class="btn blue-btn">Entrar
+                                            
+                                            <div class="form-group mt-md">
+                                                <button name="submit" type="submit" class="btn btn-primary">Entrar
                                                 </button>
                                             </div>
                                         </div>
@@ -369,7 +370,7 @@
                         </div>
                         <div class="row mt-md">
                             <div class="col-md-12">
-                                <p><a href="#">Esqueci meus dados</a> <a href="#" class="ml-lg">Cadastre-se</a></p>
+                                <p><a href="#">Forgot Passwoerd?</a> <a href="#" class="ml-lg">Create a Anccount</a></p>
                             </div>
                         </div>
                     </div>
@@ -377,6 +378,8 @@
             </div>
         </div>
         
+        
+        <!-- modal contato -->
         <div class="modal fade modal-dark" tabindex="-1" role="dialog" id="modal-contato">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
@@ -384,7 +387,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i class="ion-ios-close-outline h1 text-white"></i> </span>
                         </button>
-                        <h3 class="modal-title">Contact</h3>
+                        <h5 class="modal-title text-uppercase"><strong>Contact</strong></h5>
                     </div>
                     <div class="modal-body">
                         <div class="row">
@@ -405,20 +408,14 @@
                                                 <label class="sr-only" for="">Senha</label>
                                                 <textarea name="user-message" id="user-message" class="form-control" cols="20" rows="10" placeholder="Enter your Message"></textarea>
                                             </div>
-                                            <p class="mt-md">
-                                                <a class="btn btn-primary" href="#">Send message</a>
-                                            </p>
+                                            <div class="form-group mt-md">
+                                                <button name="submit" type="submit" class="btn btn-primary">Send message
+                                                </button>
+                                            </div>
                                         </div>
                                     
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                        <div class="row mt-md">
-                            <div class="col-md-12">
-                                <h4 class="divider-top">Other contacts</h4>
-                                <p class="mt-md"><i class="ion-android-phone-portrait"></i> +55 (00) 0000-0000</p>
-                                <p><i class="ion-android-mail"></i> contact@2ledger.com</p>
                             </div>
                         </div>
                     </div>
